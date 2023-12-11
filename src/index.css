@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Roboto+Slab&family=Roboto:ital,wght@1,500&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    font-family: 'Roboto Slab', serif;
+}
+li a{
+    @apply flex items-center text-xl font-normal  lg:text-2xl sm:py-8 sm:text-sm
+}
+#movie_play{
+    @apply py-10 px-4 rounded-3xl my-5 bg-lightRed lg:my-2 
+}
+#logos{
+    @apply h-screen fixed px-5 border border-black lg:w-[280px] md:w-[220px] sm:w-[150px] 
+}
+#logo{
+    @apply flex items-center xl:py-7 lg:py-5 sm:py-3 
+}
+#logo p{
+@apply pl-4 md:text-2xl
+}
+#logo svg{
+    @apply sm:text-4xl font-bold
+}
+#movie_Abouts{
+    @apply lg:ml-[280px]  md:ml-[220px] sm:ml-[150px]
+}
+#movie_About{
+    @apply md:w-[90%] md:m-[auto]
+}
+#movie_titles{
+    @apply flex items-center justify-between pb-3 font-normal lg:text-2xl sm:text-sm md:text-xl sm:font-thin 
+}
+#genre{
+    @apply flex pt-2 text-center 
+}
+#genres{
+    @apply  pl-8 border-2 rounded-3xl ml-3 pr-4.5 text-flower sm:hidden md:block
+}
+#movie_play{
+    @apply sm:text-xs
+}
+#movie_play .pin{
+    @apply bg-rose py-2 rounded-2xl text-center mt-3 text-floralWhite cursor-pointer sm:p-3
+}
+#data_about{
+    @apply font-normal lg:text-xl lg:leading-10 sm:leading-8 md:leading-8 py-7 md:text-base
+}
+#data_select{
+    @apply md:flex relative sm:flex-col
+}
+#select{
+    @apply absolute md:left-[280px] sm:left-0
+}
+#movie_select{
+    @apply bg-flower text-floralWhite xl:w-[300px] lg:w-[300px] md:w-[340px] text-center py-3 rounded-xl lg:text-2xl sm:text-base sm:mb-5 lg:mb-0
+}
+select {
+    @apply border border-black rounded-3xl lg:py-2 sm:py-1 pl-10 lg:text-2xl sm:text-base  sm:mb-5 lg:mb-0 
+}
+#movie_notification{
+    @apply flex items-center justify-center bg-Rose rounded-xl mb-3
+}
+#movie_notification p{
+    @apply  py-2 lg:text-xl text-floralWhite pl-3 font-light sm:text-base 
+}
+#movie_option{
+    @apply flex items-center justify-center bg-light rounded-xl mb-7
+}
+#movie_option p{
+    @apply flex items-center justify-center py-2 lg:text-xl sm:text-base pl-3 font-light
+}
+#movie_imgs{
+    @apply flex xl:w-[30%] md:h-[215px] sm:w-[30%]  gap-x-1
+}
+#img_text{
+   @apply flex items-center bg-lightBlack text-floralWhite absolute bottom-0 py-3 rounded-2xl sm:text-sm 
+}
+input[type="text"]{
+    border: 1px solid black;
+}
+#yeh{
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+#yeh:focus{
+    outline: none;
+}
+#movie_input{
+    position: relative; 
+}
+#btn{
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    
+}
+#moviebox h1{
+    font-size: 25px;
+    margin-left: 20px;
+}
+/* #logo svg{
+    font-size: 2rem;
+} */
+#logo h1{
+    margin-left: 20px;
+    font-size: 1.5rem;
+}
+#logos{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+li svg{
+font-size: 2rem;
+margin-right: 20px;
+}
+#movie_play p{
+    margin-bottom: 5px;
+}
+#movie_play button{
+    border: 0;
+    border-radius: 10px;
+    background-color: #BE123C33;
+    padding: 3px 10px;
+    color: #BE123C;
+    margin-top: 10px;
+    margin-left: 40px;
+}
