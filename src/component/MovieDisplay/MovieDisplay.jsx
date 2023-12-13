@@ -25,27 +25,37 @@ const MovieDisplay = () => {
           <p>MovieBox</p>
         </div>
 
-        <div  className="lg:flex lg:justify-start flex-col pt-32 gap-10 pl-6 text-2xl hidden border border-black rounded-r-lg h-screen fixed left-0 w-[280px]"  id="log">
-         <Link to={'/'}>
-         <p className="flex items-center gap-2">
-            <IoMdHome /> Home
-          </p>
-         </Link>
-          <p className="flex items-center gap-2">
-            <IoMdHome /> Home
-          </p>
-          <p className="flex items-center gap-2">
-            <IoMdHome /> Home
-          </p>
-          <p className="flex items-center gap-2">
-            <IoMdHome /> Home
-          </p>
-          <div className="bg-red-600 w-fit h-40">
-            fghjkldkfjh
-          </div>
-          <p className="flex items-center gap-2">
-            <IoMdHome /> Home
-          </p>
+        <div
+          className="lg:flex lg:justify-start flex-col pt-32 gap-10 pl-6 text-2xl hidden border border-black rounded-r-lg h-screen fixed left-0 w-[280px]"
+          id="log"
+        >
+          <Link to={"/"}>
+            <p className="flex items-center gap-2">
+              <IoMdHome /> Home
+            </p>
+          </Link>
+          <Link to={"#"}>
+            <p className="flex items-center gap-2">
+              <RiMovieFill /> Movies
+            </p>
+          </Link>
+          <Link to={"#"}>
+            <p className="flex items-center gap-2">
+              <PiTelevisionSimpleLight /> Tv Series
+            </p>
+          </Link>
+          <Link to={"#"}>
+            <p className="flex items-center gap-2">
+              <FaRegCalendarAlt /> Upcoming
+            </p>
+          </Link>
+
+          <div className="bg-red-600 w-fit h-40">fghjkldkfjh</div>
+          <Link to={"#"}>
+            <p className="flex items-center gap-2">
+              <CiLogin /> Log Out
+            </p>
+          </Link>
         </div>
 
         <div className="relative lg:hidden  ">
@@ -58,21 +68,32 @@ const MovieDisplay = () => {
           </div>
           {toggle && (
             <div className="absolute h-[50vh] justify-evenly flex flex-col gap-5 text-lg md:text-2xl  w-[100vw] py-4 px-10 right-0 m-0 bg-white">
-              <p className="flex items-center gap-2">
-                <IoMdHome /> Home
-              </p>
-              <p className="flex items-center gap-2">
-                <IoMdHome /> Home
-              </p>
-              <p className="flex items-center gap-2">
-                <IoMdHome /> Home
-              </p>
-              <p className="flex items-center gap-2">
-                <IoMdHome /> Home
-              </p>
-              <p className="flex items-center gap-2">
-                <IoMdHome /> Home
-              </p>
+              <Link to={"/"}>
+                <p className="flex items-center gap-2">
+                  <IoMdHome /> Home
+                </p>
+              </Link>
+              <Link to={"#"}>
+                <p className="flex items-center gap-2">
+                  <RiMovieFill /> Movies
+                </p>
+              </Link>
+
+              <Link to={"#"}>
+                <p className="flex items-center gap-2">
+                  <PiTelevisionSimpleLight /> Tv Series
+                </p>
+              </Link>
+              <Link to={"#"}>
+                <p className="flex items-center gap-2">
+                  <FaRegCalendarAlt /> Upcoming
+                </p>
+              </Link>
+              <Link to={"#"}>
+                <p className="flex items-center gap-2">
+                  <CiLogin /> Log Out
+                </p>
+              </Link>
             </div>
           )}
         </div>

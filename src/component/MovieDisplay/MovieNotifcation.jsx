@@ -7,7 +7,7 @@ import torll from "../../assets/torll.jpeg"
 const MovieNotifcation = () => {
   return (
     <React.Fragment>
-        <div className='xl:w-[50%] lg:w-full xl:ml-5 pt-9'>
+        <div className='xl:w-[50%] lg:w-full xl:ml-5 '>
               <div id="movie_notification">
                <CiFaceSmile style={{fontSize:"22px", color:"floralwhite"}} /> 
                 <p> See Showtimes</p>
