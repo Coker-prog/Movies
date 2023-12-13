@@ -33,4 +33,5 @@ const Movie = ({ isLoading, datas, error }) => {
   )
 }
 
+
 export default Movie

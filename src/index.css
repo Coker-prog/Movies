@@ -13,10 +13,10 @@ li a{
     @apply py-10 px-4 rounded-3xl my-5 bg-lightRed lg:my-2 
 }
 #logos{
-    @apply h-screen fixed px-5 border border-black lg:w-[280px] md:w-[220px] sm:w-[150px] 
+    @apply md:h-screen md:fixed px-5 md:border md:border-black xl:w-[280px] md:w-[220px]  flex md:flex-col sm:flex-row  items-center
 }
 #logo{
-    @apply flex items-center xl:py-7 lg:py-5 sm:py-3 
+    @apply flex items-center  lg:py-5 sm:py-3
 }
 #logo p{
 @apply pl-4 md:text-2xl
@@ -24,11 +24,17 @@ li a{
 #logo svg{
     @apply sm:text-4xl font-bold
 }
+/* ul{
+    @apply flex md:flex-col items-center  md:block
+} */
+a svg{
+    @apply text-2xl
+}
 #movie_Abouts{
-    @apply lg:ml-[280px]  md:ml-[220px] sm:ml-[150px]
+    @apply lg:ml-[280px]  md:ml-[220px] 
 }
 #movie_About{
-    @apply md:w-[90%] md:m-[auto]
+    @apply w-[90%] m-[auto]
 }
 #movie_titles{
     @apply flex items-center justify-between pb-3 font-normal lg:text-2xl sm:text-sm md:text-xl sm:font-thin 
@@ -37,10 +43,10 @@ li a{
     @apply flex pt-2 text-center 
 }
 #genres{
-    @apply  pl-8 border-2 rounded-3xl ml-3 pr-4.5 text-flower sm:hidden md:block
+    @apply  pl-8 border-2 rounded-3xl ml-3 pr-4.5 text-flower 
 }
 #movie_play{
-    @apply sm:text-xs
+    @apply sm:text-xs sm:hidden md:block
 }
 #movie_play .pin{
     @apply bg-rose py-2 rounded-2xl text-center mt-3 text-floralWhite cursor-pointer sm:p-3
@@ -52,16 +58,16 @@ li a{
     @apply md:flex relative sm:flex-col
 }
 #select{
-    @apply absolute md:left-[280px] sm:left-0
+    @apply absolute md:left-[280px] 
 }
 #movie_select{
     @apply bg-flower text-floralWhite xl:w-[300px] lg:w-[300px] md:w-[340px] text-center py-3 rounded-xl lg:text-2xl sm:text-base sm:mb-5 lg:mb-0
 }
 select {
-    @apply border border-black rounded-3xl lg:py-2 sm:py-1 pl-10 lg:text-2xl sm:text-base  sm:mb-5 lg:mb-0 
+    @apply border border-black rounded-3xl lg:py-2 sm:py-1 pl-10 lg:text-2xl sm:text-base sm:mb-5 lg:mb-0 w-full 
 }
 #movie_notification{
-    @apply flex items-center justify-center bg-Rose rounded-xl mb-3
+    @apply flex items-center justify-center bg-Rose rounded-xl my-3
 }
 #movie_notification p{
     @apply  py-2 lg:text-xl text-floralWhite pl-3 font-light sm:text-base 
