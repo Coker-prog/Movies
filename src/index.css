@@ -6,9 +6,6 @@
 *{
     font-family: 'Roboto Slab', serif;
 }
-/* li a{
-    @apply flex items-center text-xl font-normal  lg:text-2xl sm:py-8 sm:text-sm
-} */
 #movie_play{
     @apply py-10 px-4 rounded-3xl my-5 bg-lightRed lg:my-2 
 }
@@ -49,7 +46,7 @@
     @apply  relative lg:flex
 }
 #movie_select{
-    @apply bg-flower text-floralWhite xl:w-[300px] lg:w-[300px] sm:w-[340px] text-center py-3 rounded-xl lg:text-2xl sm:text-base
+    @apply bg-flower text-floralWhite lg:w-[300px] rounded-xl text-2xl flex justify-center
 }
 select {
     @apply border border-black rounded-2xl lg:py-2 sm:py-3 px-10 lg:text-2xl sm:text-base w-full sm:my-3

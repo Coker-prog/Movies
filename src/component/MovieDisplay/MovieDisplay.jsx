@@ -30,29 +30,32 @@ const MovieDisplay = () => {
           id="log"
         >
           <Link to={"/"}>
-            <p className="flex items-center gap-2">
+            <p className="flex items-center gap-4 py-3">
               <IoMdHome /> Home
             </p>
           </Link>
           <Link to={"#"}>
-            <p className="flex items-center gap-2">
+            <p className="flex items-center gap-4 py-3">
               <RiMovieFill /> Movies
             </p>
           </Link>
           <Link to={"#"}>
-            <p className="flex items-center gap-2">
+            <p className="flex items-center gap-4 py-3">
               <PiTelevisionSimpleLight /> Tv Series
             </p>
           </Link>
           <Link to={"#"}>
-            <p className="flex items-center gap-2">
+            <p className="flex items-center gap-4 py-3">
               <FaRegCalendarAlt /> Upcoming
             </p>
           </Link>
-
-          <div className="bg-red-600 w-fit h-40">fghjkldkfjh</div>
+          <div className="bg-red-500 text-floralWhite rounded-2xl text-lg items-evenly w-fit mr-5 h-60 py-3">
+            <p className="p-2">Play Movies quizes and earn free tickets</p>
+            <p className="p-2">50k people are playing now</p>
+            <button className="w-full p-2 rounded-2xl bg-red-600">Start Playing</button>
+          </div>
           <Link to={"#"}>
-            <p className="flex items-center gap-2">
+            <p className="flex items-center gap-4 py-3">
               <CiLogin /> Log Out
             </p>
           </Link>
@@ -69,28 +72,28 @@ const MovieDisplay = () => {
           {toggle && (
             <div className="absolute h-[50vh] justify-evenly flex flex-col gap-5 text-lg md:text-2xl  w-[100vw] py-4 px-10 right-0 m-0 bg-white">
               <Link to={"/"}>
-                <p className="flex items-center gap-2">
+                <p className="flex items-center gap-4">
                   <IoMdHome /> Home
                 </p>
               </Link>
               <Link to={"#"}>
-                <p className="flex items-center gap-2">
+                <p className="flex items-center gap-4">
                   <RiMovieFill /> Movies
                 </p>
               </Link>
 
               <Link to={"#"}>
-                <p className="flex items-center gap-2">
+                <p className="flex items-center gap-4">
                   <PiTelevisionSimpleLight /> Tv Series
                 </p>
               </Link>
               <Link to={"#"}>
-                <p className="flex items-center gap-2">
+                <p className="flex items-center gap-4">
                   <FaRegCalendarAlt /> Upcoming
                 </p>
               </Link>
               <Link to={"#"}>
-                <p className="flex items-center gap-2">
+                <p className="flex items-center gap-4">
                   <CiLogin /> Log Out
                 </p>
               </Link>
