@@ -19,7 +19,7 @@ const Movie = ({ isLoading, datas, error }) => {
                 < FaChevronRight />
               </div>
             </div>
-            <div id="movie_list" className='grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-x-10'>
+            <div id="movie_list" className='grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-x-10'>
               {datas && datas.map((data) => (
                 <div id="movie_preview" key={data.id}>
                     <MovieDetails data={data} />

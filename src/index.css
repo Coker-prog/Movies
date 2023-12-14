@@ -10,13 +10,7 @@
     @apply py-10 px-4 rounded-3xl my-5 bg-lightRed lg:my-2 
 }
 #logo{
-    @apply flex items-center  lg:py-5 sm:py-3
-}
-#logo p{
-@apply pl-4 md:text-2xl
-}
-#logo svg{
-    @apply sm:text-4xl font-bold
+    @apply flex items-center py-5 
 }
 #movie_Abouts{
     @apply lg:ml-[280px]
