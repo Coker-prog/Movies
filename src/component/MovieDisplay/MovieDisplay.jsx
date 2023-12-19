@@ -20,8 +20,8 @@ const MovieDisplay = () => {
   return (
     <React.Fragment>
       <header className="flex  lg:flex-col lg:gap-10 items-center justify-between  lg:items-start px-5">
-        <div id="logo" className="lg:fixed z-10">
-          <PiTelevision />
+        <div id="logo" className="lg:fixed z-10 text-2xl">
+          <PiTelevision className="text-2xl"/>
           <p>MovieBox</p>
         </div>
 
